@@ -82,3 +82,28 @@ button:hover {
     color: blue;
 
 }
+
+.safe{
+    background-color: aqua;
+}
+
+.hint.cell{
+    background-color: yellow
+}
+
+
+.difficulties{
+    margin: 5px;
+
+}
+
+.hidden{
+    display: none;
+}
+
+
+.marked{
+    background-color: yellow
+
+
+}

@@ -10,12 +10,7 @@
 
 <body onload="onInit()">
     <h1>Mine Sweeper</h1>
-    <div class= "general">
-        <div class="dashboard">
-            <button class="level" onclick="changeDiff(this)">I</button>
-            <button class="level" onclick="changeDiff(this)">II</button>
-            <button class="level" onclick="changeDiff(this)">III</button>
-        </div>
+    <div class="general">
         <button class="smiley" onclick="onInit()"></button>
 
         <p class=lives></p>
@@ -24,6 +19,18 @@
 
             </tbody>
         </table>
+        <div class="dashboard">
+            <button class="safe" onclick="safeClick()"> 🛡</button>
+            <button class="hint" onclick="activeHint(this)">🔍 </button>
+            <button class="hint" onclick="activeHint(this)"> 🔍</button>
+            <button class="hint" onclick="activeHint(this)"> 🔍</button>
+
+            <div class="difficulties">
+                <button class="level" onclick="changeDiff(this)">I</button>
+                <button class="level" onclick="changeDiff(this)">II</button>
+                <button class="level" onclick="changeDiff(this)">III</button>
+            </div>
+        </div>
 
     </div>
     <h4>Ishai Peretz</h4>

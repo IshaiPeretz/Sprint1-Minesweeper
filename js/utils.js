@@ -15,18 +15,8 @@ function createMat(size) {
 
 
 
-function countNegsMines(cellI, cellJ, board) {
-	var count = 0;
-	for (var i = cellI - 1; i <= cellI + 1; i++) {
-		if (i < 0 || i >= board.length) continue;
-		for (var j = cellJ - 1; j <= cellJ + 1; j++) {
-			if (j < 0 || j >= board[i].length) continue;
-			if (i === cellI && j === cellJ) continue;
-			if (board[i][j].isMine) count++;
-		}
-	}
-	return count;
-}
+
+
 
 
 function getEmptyCell(board) {
@@ -35,7 +25,7 @@ function getEmptyCell(board) {
 	for (var i = 0; i < board.length; i++) {
 		for (var j = 0; j < board[i].length; j++) {
 			const currCell = board[i][j]; 
-			if (!currCell.isMine) {
+			if (!currCell.isMine && !currCell.isRevealed) {
 				emptyCells.push({ i, j })
 			}
 		}
