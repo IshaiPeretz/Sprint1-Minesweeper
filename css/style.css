@@ -1,20 +1,29 @@
-body {
-background-color: #b7b7b787
-
+* {
+    box-sizing: border-box;
 }
-h1 {
+
+body {
+    background-color: #b7b7b787;
     text-align: center;
 }
 
+h1 {
+    text-align: center;
+    height: 30px;
+}
+
 table {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border: 1px solid black;
     border-radius: 2%;
     margin: auto;
 }
 
-
+.general {
+    background-color: aliceblue;
+    height: calc(100vh - 30px - 30px)
+}
 td {
     border: 1px solid black;
     width: 5%;
@@ -27,14 +36,49 @@ td {
 td:hover {
     cursor: pointer;
     background-color: grey;
-    
+
 }
 
-h4{
-    text-align: center; 
+h4 {
+    text-align: center;
+    height: 30px;
 }
 
 span {
     text-align: center;
     color: blue
+}
+
+
+.smiley {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+
+}
+
+.dashboard {
+    text-align: center;
+    margin: 10px;
+
+}
+
+button {
+    background-color: beige;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.revealed {
+    background-color: darkgray;
+    color: blue;
+
 }

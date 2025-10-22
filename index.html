@@ -10,13 +10,22 @@
 
 <body onload="onInit()">
     <h1>Mine Sweeper</h1>
-    <table>
-        <tbody class="board">
+    <div class= "general">
+        <div class="dashboard">
+            <button class="level" onclick="changeDiff(this)">I</button>
+            <button class="level" onclick="changeDiff(this)">II</button>
+            <button class="level" onclick="changeDiff(this)">III</button>
+        </div>
+        <button class="smiley" onclick="onInit()"></button>
 
-        </tbody>
-    </table>
+        <p class=lives></p>
+        <table>
+            <tbody class="board">
 
+            </tbody>
+        </table>
 
+    </div>
     <h4>Ishai Peretz</h4>
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
