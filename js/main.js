@@ -159,7 +159,7 @@ function onCellClicked(elCell, i, j) {
         minesPositions.push({ i, j })
         if (minesPositions.length === gLevel.mines) {
             for (var i = 0; i < minesPositions.length; i++) {
-                gBoard[minesPositions[i].i][minesPositions[i].j].isMine = true  
+                gBoard[minesPositions[i].i][minesPositions[i].j].isMine = true
             }
             gGame.skipMines = true
             gGame.normalMode = true
@@ -404,9 +404,10 @@ function activeMegaHint() {
 }
 
 function placeMines() {
-    gGame.normalMode = false
-
-
+    if (gGame.isFirstClick) {
+        gGame.normalMode = !gGame.normalMode
+        console.log(gGame.normalMode)
+    }
 }
 
 
