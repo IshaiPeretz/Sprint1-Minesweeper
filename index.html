@@ -12,26 +12,31 @@
     <h1>Mine Sweeper</h1>
     <div class="general">
         <button class="smiley" onclick="onInit()"></button>
-        <h3 class = "timer">0</h3>
-        <p class=lives></p>
+        <div>
+            <span class="game-stats timer">0</span>
+            <span class="game-stats mine-counter" title="Mines Counter">0</span>
+        </div>
+        <p class=lives title = "Lives"></p>
         <table>
             <tbody class="board">
-                
+
             </tbody>
         </table>
         <div class="dashboard">
-            <button class="safe"  title = "SafeClick" onclick="safeClick()"> 🔮</button>
-            <button class="hint marked"  title ="Hint" onclick="activeHint(this)">🔍</button>
-            <button class="hint marked"  title ="Hint" onclick="activeHint(this)">🔍</button>
-            <button class="hint marked" title ="Hint" onclick="activeHint(this)">🔍</button>
-            <button class="terminator"  title = "Terminator" onclick="terminateMines(this)">👾</button>
-            
-            
+            <button class="safe" title="SafeClick" onclick="safeClick()"> 🔮</button>
+            <button class="mega-hint" title="Mega Hint" onclick="activeMegaHint(this)">🔍</button>
+            <button class="terminator" title="Terminator" onclick="terminateMines(this)">👾</button>
+            <button class="hint marked" title="Hint" onclick="activeHint(this)">💡</button>
+            <button class="hint marked" title="Hint" onclick="activeHint(this)">💡</button>
+            <button class="hint marked" title="Hint" onclick="activeHint(this)">💡</button>
+
+
             <div class="difficulties">
-                <button class="level" title = "Beginner 4x4" onclick="changeDiff(this)">I</button>
-                <button class="level" title = "Medium 8x8" onclick="changeDiff(this)">II</button>
-                <button class="level" title = "Expert 12x12" onclick="changeDiff(this)">III</button>
-                <h2 class="log"></h2>
+                <button class="level" title="Beginner 4x4" onclick="changeDiff(this)">I</button>
+                <button class="level" title="Medium 8x8" onclick="changeDiff(this)">II</button>
+                <button class="level" title="Expert 12x12" onclick="changeDiff(this)">III</button>
+                <button class="level" title="Place Mines Yourself" onclick="placeMines()">💣</button>
+                
             </div>
         </div>
 

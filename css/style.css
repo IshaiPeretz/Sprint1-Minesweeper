@@ -3,17 +3,19 @@
 }
 
 body {
-    background-color: #b7b7b787;
-
+    background-color: rgb(51, 64, 88);
     text-align: center;
-
     margin-bottom: 20px;
-    margin: 0
+    margin: 0;
+    padding: 0;
+    color: azure;
 }
 
 h1 {
+    background-color: rgb(51, 64, 88);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    height: 30px;
+    font-style: italic;
 }
 
 .general {
@@ -52,7 +54,7 @@ td:hover {
 
 h4 {
     text-align: center;
-    height: 30px;
+    
 }
 
 span {
@@ -62,14 +64,16 @@ span {
 
 
 .smiley {
+    border: 3px solid rgb(51, 64, 88);
     margin: 10px;
     width: 50px;
     height: 50px;
     font-size: 25px;
+    border-radius: 20%;
 
 }
 
-.timer {
+.game-stats {
     text-align: center;
     margin: auto;
     background-color: black;
@@ -78,6 +82,7 @@ span {
     padding: 5px 10px;
     font-family: Arial, Helvetica, sans-serif;
     border: 3px solid rgb(51, 64, 88);
+    cursor: default;
 
 }
 
@@ -88,7 +93,7 @@ span {
 }
 
 button {
-    background-color: beige;
+    background-color: rgb(175, 201, 211);
     width: 50px;
     height: 50px;
     text-align: center;
@@ -160,3 +165,9 @@ button .num {
 }
 
 
+.lives{
+    cursor: default;
+    font-size: 18px;
+
+
+}
