@@ -4,7 +4,11 @@
 
 body {
     background-color: #b7b7b787;
+
     text-align: center;
+
+    margin-bottom: 20px;
+    margin: 0
 }
 
 h1 {
@@ -12,24 +16,31 @@ h1 {
     height: 30px;
 }
 
+.general {
+    background-color: rgb(117, 117, 117);
+    border-radius: 2px;
+    margin: 0;
+    min-height: calc(100vh - 150px);
+}
+
+
 table {
-    width: 300px;
-    height: 300px;
+    background-color: rgb(51, 64, 88);
+    /* width: 300px; */
+    table-layout: fixed;
     border: 1px solid black;
     border-radius: 2%;
     margin: auto;
+
 }
 
-.general {
-    background-color: aliceblue;
-    height: calc(100vh - 30px - 30px)
-}
 td {
     border: 1px solid black;
-    width: 5%;
-    height: 5%;
+    width: 40px;
+    height: 40px;
     text-align: center;
     border-radius: 2%;
+    overflow: hidden;
 
 }
 
@@ -52,25 +63,38 @@ span {
 
 .smiley {
     margin: 10px;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+
+}
+
+.timer {
+    text-align: center;
+    margin: auto;
+    background-color: black;
+    color: red;
+    width: min-content;
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid rgb(51, 64, 88);
 
 }
 
 .dashboard {
     text-align: center;
     margin: 10px;
-
+    padding: 20px;
 }
 
 button {
     background-color: beige;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     text-align: center;
-
-
+    font-size: 25px;
+    position: relative;
+    
 }
 
 button:hover {
@@ -78,32 +102,61 @@ button:hover {
 }
 
 .revealed {
-    background-color: darkgray;
+    background-color: rgb(169, 169, 169);
     color: blue;
-
 }
 
-.safe{
-    background-color: aqua;
+.safe.cell {
+    background-color: rgb(35, 165, 197);
 }
 
-.hint.cell{
-    background-color: yellow
+.hint.cell {
+    background-color: rgb(192, 192, 114)
 }
 
 
-.difficulties{
-    margin: 5px;
-
+.marked {
+    background-color: yellow;
 }
 
-.hidden{
+.difficulties {
+    margin: 20px 5px;
+}
+
+.hidden {
     display: none;
 }
 
 
-.marked{
-    background-color: yellow
+.depleted {
+    background-color: grey
+}
+
+.depleted:hover {
+    cursor: not-allowed;
 
 
 }
+
+img {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+}
+
+
+button .icon {
+    display: inline-block;
+    margin: 0;
+}
+
+
+button .num {
+    position: absolute;
+    color: black;
+    font-size: 14px;
+    right: 1px;
+}
+
+

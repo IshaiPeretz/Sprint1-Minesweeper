@@ -12,23 +12,26 @@
     <h1>Mine Sweeper</h1>
     <div class="general">
         <button class="smiley" onclick="onInit()"></button>
-
+        <h3 class = "timer">0</h3>
         <p class=lives></p>
         <table>
             <tbody class="board">
-
+                
             </tbody>
         </table>
         <div class="dashboard">
-            <button class="safe" onclick="safeClick()"> 🛡</button>
-            <button class="hint" onclick="activeHint(this)">🔍 </button>
-            <button class="hint" onclick="activeHint(this)"> 🔍</button>
-            <button class="hint" onclick="activeHint(this)"> 🔍</button>
-
+            <button class="safe"  title = "SafeClick" onclick="safeClick()"> 🔮</button>
+            <button class="hint marked"  title ="Hint" onclick="activeHint(this)">🔍</button>
+            <button class="hint marked"  title ="Hint" onclick="activeHint(this)">🔍</button>
+            <button class="hint marked" title ="Hint" onclick="activeHint(this)">🔍</button>
+            <button class="terminator"  title = "Terminator" onclick="terminateMines(this)">👾</button>
+            
+            
             <div class="difficulties">
-                <button class="level" onclick="changeDiff(this)">I</button>
-                <button class="level" onclick="changeDiff(this)">II</button>
-                <button class="level" onclick="changeDiff(this)">III</button>
+                <button class="level" title = "Beginner 4x4" onclick="changeDiff(this)">I</button>
+                <button class="level" title = "Medium 8x8" onclick="changeDiff(this)">II</button>
+                <button class="level" title = "Expert 12x12" onclick="changeDiff(this)">III</button>
+                <h2 class="log"></h2>
             </div>
         </div>
 

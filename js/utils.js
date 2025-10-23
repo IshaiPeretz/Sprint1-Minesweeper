@@ -37,6 +37,24 @@ function getEmptyCell(board) {
 }
 
 
+function getMines(board) {
+	const containsMines = []; 
+
+	for (var i = 0; i < board.length; i++) {
+		for (var j = 0; j < board[i].length; j++) {
+			const currCell = board[i][j]; 
+			if (currCell.isMine) {
+				containsMines.push({ i, j })
+			}
+		}
+	}
+
+
+	const randomIdx = getRandomInt(0, containsMines.length)
+	return containsMines[randomIdx]
+}
+
+
 function getRandomInt(min, max) {
     min = Math.ceil(min)
     max = Math.floor(max)
