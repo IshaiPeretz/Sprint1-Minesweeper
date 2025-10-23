@@ -195,7 +195,6 @@ function onCellClicked(elCell, i, j) {
         if (gGame.lives === 0) {
             gGame.isOn = false
             clearInterval(gGameInterval)
-            console.log('Game Over')
             elSmiley.innerText = LOSE
             showMines()
         } else
@@ -227,7 +226,6 @@ function winCon(board) {
         gGame.isOn = false
         clearInterval(gGameInterval)
         showMines()
-        console.log('Victory')
     }
 }
 
@@ -305,7 +303,6 @@ function safeClick() {
         elSafeCell.classList.toggle('safe')
     }, 1500)
     gGame.isSafe--
-    console.log(gGame.isSafe)
     elSafeBtn.innerHTML = `<span class="icon">🔮</span><span class="num">${gGame.isSafe}</span>`
     if (gGame.isSafe === 0) elSafeBtn.classList.add('depleted')
 }
@@ -406,7 +403,6 @@ function activeMegaHint() {
 function placeMines() {
     if (gGame.isFirstClick) {
         gGame.normalMode = !gGame.normalMode
-        console.log(gGame.normalMode)
     }
 }
 
